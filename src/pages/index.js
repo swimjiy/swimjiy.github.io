@@ -36,7 +36,7 @@ const Hero = () => {
             max-width: ${rhythm(15)};
           `}
         >
-          Your blog says the things you want to say.
+          조금씩, 꾸준히, <br/>기록하는 공간
         </h1>
       </Container>
       <div
@@ -89,6 +89,7 @@ export default function Index({ data: { site, allMdx } }) {
             </h2>
             <Description>
               {post.excerpt}{' '}
+              {/* {post.frontmatter.description} */}
               <Link
                 to={post.frontmatter.slug}
                 aria-label={`View ${post.frontmatter.title}`}
@@ -122,7 +123,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 190)
+          excerpt(pruneLength: 140)
           id
           fields {
             title
