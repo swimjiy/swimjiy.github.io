@@ -72,6 +72,6 @@
     "develop": "gatsby develop",
     "start": "serve public/",
     "now-build": "npm run build",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "gh-pages -d public"
   }
 }
