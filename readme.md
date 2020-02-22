@@ -1,6 +1,3 @@
-# Swimjiy's Devlog :woman_technologist:
+# Static HTML exported from a wordpress blog
 
-개발하는 블로그 2020 ver.
-
-published by [gatsby-starter-egghead-blog](https://github.com/eggheadio/gatsby-starter-egghead-blog)
-
+generate favico stuff from https://realfavicongenerator.net/
