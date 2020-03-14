@@ -37,6 +37,22 @@ const Footer = ({ author, noSubscribeForm }) => (
         >
           {author && `${author} \u00A9 ${new Date().getFullYear()}`}
         </div>
+        <div
+          css={css`
+            font-size: 90%;
+            opacity: 0.4;
+          `}
+        >
+          , Built with
+        </div>
+        <div
+          css={css`
+            font-size: 90%;
+            opacity: 0.7;
+          `}
+        >
+          gatsby-starter-egghead-blog
+        </div>
         <div>
           <Twitter />
           <GitHub />

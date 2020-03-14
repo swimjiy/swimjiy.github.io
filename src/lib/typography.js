@@ -2,12 +2,12 @@ import Typography from 'typography'
 import '../fonts/fonts.css'
 
 export const fonts = {
-  regular: 'Inter UI Regular',
-  regularItalic: 'Inter UI Regular Italic',
-  semibold: 'Inter UI Semibold',
-  semiboldItalic: 'Inter UI Semibold Italic',
-  bold: 'Inter UI Bold',
-  boldItalic: 'Inter UI Bold Italic',
+  sansRegular: 'Noto Sans KR Regular',
+  sansLight: 'Noto Sans KR Light',
+  sansBold: 'Noto Sans KR Medium',
+  regular: 'Noto Serif KR Regular',
+  light: 'Noto Serif KR Light',
+  bold: 'Noto Serif KR Medium',
 }
 
 const typography = new Typography({
@@ -15,7 +15,7 @@ const typography = new Typography({
   baseLineHeight: 1.55,
   headerLineHeight: 1.4,
   headerFontFamily: [fonts.bold, 'sans-serif'],
-  bodyFontFamily: [fonts.regular, 'sans-serif'],
+  bodyFontFamily: [fonts.sansLight, 'sans-serif'],
   headerColor: 'hsla(0,0%,0%,0.9)',
   bodyColor: 'hsla(0,0%,0%,0.8)',
 

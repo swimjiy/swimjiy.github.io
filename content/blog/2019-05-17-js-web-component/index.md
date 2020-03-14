@@ -23,7 +23,7 @@ tags:
 
 따라서 웹 컴포넌트를 이용하여 코드를 작성하면 Vue나 React와 같은 라이브러리, 프레임워크에 의존하지 않고 상호 운용이 가능하게끔 작성할 수 있다.
 
-<br>
+<br/>
 
 ### 웹 컴포넌트의 규격
 
@@ -34,19 +34,19 @@ tags:
 
 위의 4가지 규격을 함께 사용하는 것이 가장 이상적이지만, 사용하고 싶은 부분만 선택적으로 사용하는 것도 가능하다. 
 
-<br>
+<br/>
 
 ### 폴리머
 
 [폴리머](https://www.polymer-project.org/)는 대표적인 웹 컴포넌트 라이브러리 중 하나로, 구글에서 제공한다. 폴리머를 이용하면 재사용 가능한 웹 컴포넌트 생성이 가능하다.
 
-<br>
+<br/>
 
 ### Refer
 
-<https://www.webcomponents.org/> 
+https://www.webcomponents.org
 
-<https://d2.naver.com/helloworld/188655> 
+https://d2.naver.com/helloworld/188655
 
-<https://developer.mozilla.org/ko/docs/Web/Web_Components> 
+https://developer.mozilla.org/ko/docs/Web/Web_Components
 

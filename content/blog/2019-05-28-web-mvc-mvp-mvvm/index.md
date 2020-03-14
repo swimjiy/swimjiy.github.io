@@ -16,7 +16,7 @@ tags:
 
 웹 개발을 하면서 만나게 되는 용어 중 하나가 **디자인 패턴**이다. 잘 설계된 디자인 패턴은 역할별로 패턴을 나누어 관리함으로써 개발자로 하여금 유지보수가 편리한 코드를 짤 수 있게 돕는다. 이번 포스팅에서는 디자인 패턴 중 MVC, MVP, MVVM 3가지 패턴들이 어떤 방식으로 동작하는지 알아보고 각 패턴별 장단점을 간략하게 설명하고자 한다.
 
-<br>
+<br/>
 
 ## 디자인 패턴이란
 
@@ -24,7 +24,7 @@ tags:
 
 디자인 패턴에는 수많은 종류가 있는데, 그 중 2개 이상의 패턴을 결합하여 사용하는 **컴파운드 패턴**(Compound Pattern)이라 부른다. 이러한 컴파운트 패턴 중 가장 많이 쓰이는 패턴이 **MVC**이며, MVC에서 파생되어 나온 패턴이 **MVP**와 **MVVM**이다. 
 
-<br>
+<br/>
 
 ## 사전지식
 
@@ -34,7 +34,7 @@ tags:
 >
 > 유지보수가 쉽고 개발의 효율을 높이기 위해서는 각 패턴 별로 역할을 나누어 관리하는 것이 중요하고, 때문에 모델과 뷰 간의 강한 결합을 피하는 것이 좋다.
 
-<br>
+<br/>
 
 ## MVC (Model View Controller)
 
@@ -44,7 +44,7 @@ MVC는 **M**odel **V**iew **C**ontroller의 약자로 어플리케이션을 세 
 
 > Controller : 사용자로부터 입력 받은 데이터를 가지고 모델과 뷰의 상호 작용을 관리한다.
 
-<br>
+<br/>
 
 #### 동작
 
@@ -53,19 +53,19 @@ MVC는 **M**odel **V**iew **C**ontroller의 약자로 어플리케이션을 세 
 3. Model은 데이터가 변경되었음을 Controller에게 전달하고 Controller는 변경을 적용할 View를 선택한다.
 4. View가 Model에게 상태에 대한 데이터를 요청하고, 이를 이용하여 UI에 표현한다.
 
-<br>
+<br/>
 
 #### 장점
 
 Model과 View 모델을 분리하여 서로 간의 간섭을 피하고, Controller라는 중간 관리자를 두어 간접적으로 의사소통을 함으로써 유연한 구조를 설계할 수 있다.
 
-<br>
+<br/>
 
 #### 단점
 
 Model과 View의 의존성이 비교적 높기 때문에 어플리케이션의 구조가 복잡해질 가능성이 있다.
 
-<br>
+<br/>
 
 ## MVP (Model View Presenter)
 
@@ -75,7 +75,7 @@ MVC의 Controller의 역할을 **Presenter**가 담당하는 패턴이다.
 
 > Presenter : View에서 받은 요청을 토대로 Model 데이터의 상태를 변경하고, 이를 다시 View에 전달하는 역할이다.
 
-<br>
+<br/>
 
 #### 동작
 
@@ -86,19 +86,19 @@ MVC의 Controller의 역할을 **Presenter**가 담당하는 패턴이다.
 5. Presenter는 View에게 데이터를 전달한다.
 6. View는 받은 데이터를 UI에 표현한다.
 
-<br>
+<br/>
 
 #### 장점
 
 Presenter가 Model과 View의 중간다리 역할을 하기 때문에 Model과 View 사이의 의존성이 없다.
 
-<br>
+<br/>
 
 #### 단점
 
 Model과 View 사이의 의존성을 해결했지만, 역으로 Presenter와 View 사이가 1:1로 강한 의존성을 가진다.
 
-<br>
+<br/>
 
 ## MVVM (Model View ViewModel)
 
@@ -108,7 +108,7 @@ Controller와 Presenter를 대신해 **View Model**이 존재하는 패턴이다
 
 >  View Model : View를 표현하기 위한 Model이다. 
 
-<br>
+<br/>
 
 #### 동작
 
@@ -118,13 +118,13 @@ Controller와 Presenter를 대신해 **View Model**이 존재하는 패턴이다
 4. Model은 View Model에게 필요한 데이터를 응답한다.
 5. Data Binding을 통해 View Model의 값이 변하면 View의 정보가 자동으로 변경된다.
 
-<br>
+<br/>
 
 #### 장점
 
 Command 패턴과 Data Binding을 통해 View와 Model의 의존성을 없앤다.
 
-<br>
+<br/>
 
 #### 단점
 
@@ -132,18 +132,18 @@ View Model의 설계가 까다롭다.
 
 
 
-<br>
+<br/>
 
 ## 결론
 
 세 가지 패턴마다 각기 장단점이 다르듯이 어떤 패턴을 사용할지는 프로젝트의 성향에 따라 다르다. 또한 이번 시간에는 각 패턴의 동작을 간략하게 설명했는데, 다음에는 실제 프로젝트를 진행하면서 어떤 형식으로 View와 Model이 동작하는지 알아보면 좋을 것 같다.
 
-<br>
+<br/>
 
 ## Refer
 
 [MVC, MVP, MVVM 비교-마기의 개발 블로그](https://magi82.github.io/android-mvc-mvp-mvvm/)
 
-[[디자인패턴\] MVC, MVP, MVVM 비교-버미노트]((https://beomy.tistory.com/43))
+[[디자인패턴] MVC, MVP, MVVM 비교-버미노트](https://beomy.tistory.com/43)
 
 [MVC 디자인 패턴-생활코딩](<https://opentutorials.org/course/697/3828>)

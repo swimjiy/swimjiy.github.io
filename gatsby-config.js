@@ -12,7 +12,7 @@ module.exports = {
     title: config.siteTitle,
     twitterHandle: config.twitterHandle,
     description: config.siteDescription,
-    keywords: ['Video Blogger'],
+    keywords: ['swimjiy', 'frontend', 'devlog', 'dev', 'FE'],
     canonicalUrl: config.siteUrl,
     image: config.siteLogo,
     author: {
@@ -61,6 +61,15 @@ module.exports = {
     'gatsby-plugin-emotion',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://swimjiy.github.io',
+        sitemap: 'https://swimjiy.github.io/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -153,5 +162,13 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-emoji`,
+        ]
+      }
+    }
   ],
 }

@@ -40,6 +40,8 @@ const getGlobalStyles = theme => {
     h4,
     h5,
     h6 {
+      font-family: ${fonts.sansBold};
+      font-weight: 500;
       color: ${theme.colors.text};
       a {
         color: ${theme.colors.text};
@@ -49,10 +51,32 @@ const getGlobalStyles = theme => {
         }
       }
     }
+    h1 {
+      font-family: ${fonts.bold};
+    }
+    h2 {
+      font-size: 150%;
+    }
+    h3 {
+      font-size: 140%;
+    }
+    h4 {
+      font-size: 130%;
+    }
+    h5 {
+      font-size: 120%;
+    }
+    p,
+    em,
+    strong,
+    li {
+      font-size: 100%;
+    }
     ${bpMaxSM} {
       p,
       em,
-      strong {
+      strong,
+      li {
         font-size: 90%;
       }
       h1 {
@@ -69,11 +93,12 @@ const getGlobalStyles = theme => {
       background: none;
     }
     em {
-      font-family: ${fonts.regularItalic};
+      font-family: ${fonts.regular};
+      font-style: italic;
     }
     strong {
       em {
-        font-family: ${fonts.semiboldItalic};
+        font-family: ${fonts.bold};
       }
     }
     input {
@@ -104,6 +129,13 @@ const getGlobalStyles = theme => {
         background: ${lighten(0.05, theme.colors.primary)};
         border: 1px solid ${lighten(0.05, theme.colors.primary)};
       }
+    }
+    code {
+      padding: 2px 4px;
+      color: #0E0A4C;
+      border-radius: 2px;
+      background-color: #ECECF0;
+      //background-color: rgba(0, 0, 0, 0.05);
     }
     pre {
       background-color: #061526 !important;

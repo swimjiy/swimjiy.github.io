@@ -87,16 +87,40 @@ export default function Index({ data: { site, allMdx } }) {
                 {post.frontmatter.title}
               </Link>
             </h2>
-            <Description>
-              {post.excerpt}{' '}
-              {/* {post.frontmatter.description} */}
+            <Description
+              // css={css`
+              //   margin: 10px 0;
+              // `}
+            >
+              {/* {post.excerpt}{' '} */}
+              {post.frontmatter.description}
+            </Description>
+            <div
+              css={css`
+                display: flex;
+                justify-content: space-between;
+                font-size: 90%;
+              `}
+            >
+              <span
+                css={css`
+                  opacity: 0.6;
+                `}
+              >
+                {post.frontmatter.date}
+              </span>
               <Link
                 to={post.frontmatter.slug}
                 aria-label={`View ${post.frontmatter.title}`}
+                css={css`
+                  display: block;
+                  margin-left: 20px;
+                  color: ${theme.colors.primary};
+                `}
               >
                 Read Article →
               </Link>
-            </Description>
+            </div>
           </div>
         ))}
         <Link to="/blog" aria-label="Visit blog page">
@@ -117,7 +141,7 @@ export const pageQuery = graphql`
       }
     }
     allMdx(
-      limit: 5
+      limit: 10
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { published: { ne: false } } }
     ) {

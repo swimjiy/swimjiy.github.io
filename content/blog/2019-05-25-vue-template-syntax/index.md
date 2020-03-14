@@ -18,11 +18,11 @@ tags:
 
 `Vue.js`는 내부적으로 템플릿 문법을 가상 DOM으로 리턴하는 render 함수로 컴파일 하는데, 이 떄 가상 DOM을 이용하여 최소한의 DOM을 조작하고 성능 부하를 최소화한다.
 
-<br>
+<br/>
 
 ------
 
-<br>
+<br/>
 
 ## 템플릿 문법1. 보간법 (Interpolation, 값 대입)
 
@@ -32,12 +32,12 @@ Vue 인스턴스에 있는 데이터를 HTML 템플릿에 표현하기 위해 �
 
 | Name                   | Code                                                         |
 | ---------------------- | ------------------------------------------------------------ |
-| Text                   | <p> 메시지 : {{ msg }} </p><p *v-once*> 메시지 한 번만 : {{ msgOnce }} </p> |
-| Raw HTML               | <p> Mustache: {{ blueMsg }} </p><p> v-html directive: <span *v-html*="blueMsg"> {{ blueMsg }} </span></p> |
-| Attribute              | <p *v-bind*:*id* = "id"> ... </p>                            |
-| JavaScript 표현식 사용 | <p> {{ number }} + 1 = {{ number + 1 }} </p><img *v-bind*:*src* = "feel?smile:bad"/><p> Reverse : {{ *reverse**.**split*('')*.**reverse*()*.**join*('') }} </p> |
+| Text                   | ```<p> 메시지 : {{ msg }} </p><p *v-once*> 메시지 한 번만 : {{ msgOnce }} </p>``` |
+| Raw HTML               | ```<p> Mustache: {{ blueMsg }} </p><p> v-html directive: <span *v-html*="blueMsg"> {{ blueMsg }} </span></p>``` |
+| Attribute              | ```<p *v-bind*:*id* = "id"> ... </p>```                      |
+| JavaScript 표현식 사용 | ```<p> {{ number }} + 1 = {{ number + 1 }} </p><img *v-bind*:*src* = "feel?smile:bad"/><p> Reverse : {{ *reverse**.**split*('')*.**reverse*()*.**join*('') }} </p>``` |
 
-<br>
+<br/>
 
 ## Text
 
@@ -53,7 +53,7 @@ Vue 인스턴스에 있는 데이터를 HTML 템플릿에 표현하기 위해 �
 <p v-once>메시지 변경 금지 : {{ msg }}</p>
 ```
 
-<br>
+<br/>
 
 ### Raw HTML (원시 HTML)
 
@@ -64,7 +64,7 @@ Mustache 구문은 HTML이 아닌 일반 텍스트로 데이터를 해석하기 
 <p> v-html directive: <span v-html="blueMsg"> {{ blueMsg }} </span></p>
 ```
 
-<br>
+<br/>
 
 ### Attribute
 
@@ -75,7 +75,7 @@ HTML 속성 (id, href, title, src 등...)은 Mustach 구문으로 데이터를 �
 <a v-bind:href = "url">Attribute : This is URL</a>
 ```
 
-<br>
+<br/>
 
 ### JavaScript 표현식 
 
@@ -87,11 +87,11 @@ HTML 속성 (id, href, title, src 등...)은 Mustach 구문으로 데이터를 �
 <p>Reverse : {{reverse.split('').reverse().join('')}}</p>
 ```
 
-<br>
+<br/>
 
 ------
 
-<br>
+<br/>
 
 ## 디렉티브(Directive)
 
@@ -99,12 +99,12 @@ HTML 속성 (id, href, title, src 등...)은 Mustach 구문으로 데이터를 �
 
 | Name   | Code                                                         |
 | ------ | ------------------------------------------------------------ |
-| v-if   | <p *v-if* = "seen"> 이제 나를 볼 수 있어요 </p>              |
-| v-bind | <a *v-bind*:*href* = "url">...</a><a :*href* = "url">...</a> |
-| v-on   | <button *v-on*:*click* = "helloEvent"> … </button><button @*click* = "helloEvent"> ... </button> |
-| 수식어 | <form *v-on*:*submit*.*prevent* = "onSubmit"> ... </form>    |
+| v-if   | ```<p *v-if* = "seen"> 이제 나를 볼 수 있어요 </p>```        |
+| v-bind | ```<a *v-bind*:*href* = "url">...</a><a :*href* = "url">...</a>``` |
+| v-on   | ```<button *v-on*:*click* = "helloEvent"> … </button><button @*click* = "helloEvent"> ... </button>``` |
+| 수식어 | ```<form *v-on*:*submit*.*prevent* = "onSubmit"> ... </form>``` |
 
-<br>
+<br/>
 
 ### v-if
 
@@ -123,7 +123,7 @@ HTML 속성 (id, href, title, src 등...)은 Mustach 구문으로 데이터를 �
 <p v-else>Nothing</p>
 ```
 
-<br>
+<br/>
 
 ### v-bind
 
@@ -134,7 +134,7 @@ HTML 속성 (id, href, title, src 등...)은 Mustach 구문으로 데이터를 �
 <a :href="url">네이버 링크</a><!-- 약어 -->
 ```
 
-<br>
+<br/>
 
 ### v-on  
 
@@ -145,7 +145,7 @@ HTML 속성 (id, href, title, src 등...)은 Mustach 구문으로 데이터를 �
 <button @click="showAlert">Show Alert</button><!-- 약어 -->
 ```
 
-<br>
+<br/>
 
 ### 전달인자
 
@@ -156,7 +156,7 @@ HTML 속성 (id, href, title, src 등...)은 Mustach 구문으로 데이터를 �
 <a v-on:click="doSomething"> ... </a>
 ```
 
-<br>
+<br/>
 
 ### 수식어
 
@@ -169,7 +169,7 @@ HTML 속성 (id, href, title, src 등...)은 Mustach 구문으로 데이터를 �
 <!-- event.preventDefault()호출 -->
 ```
 
-<br>
+<br/>
 
 ### 약어
 
@@ -187,11 +187,11 @@ HTML 속성 (id, href, title, src 등...)은 Mustach 구문으로 데이터를 �
 <a :href="url">...</a>
 ```
 
-<br>
+<br/>
 
 ------
 
-<br>
+<br/>
 
 ## Refer
 
@@ -203,6 +203,5 @@ HTML 속성 (id, href, title, src 등...)은 Mustach 구문으로 데이터를 �
 
 [리액트에 대해서 그 누구도 제대로 설명하기 어려운 것 – 왜 Virtual DOM 인가? : Velopert]( <https://velopert.com/3236> )
 
-<http://cigiko.cafe24.com/vue-js-%EB%B7%B0-%ED%85%9C%ED%94%8C%EB%A6%BF/> 
-
+http://cigiko.cafe24.com/vue-js-%EB%B7%B0-%ED%85%9C%ED%94%8C%EB%A6%BF
 https://takeuu.tistory.com/33

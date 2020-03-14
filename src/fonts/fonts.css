@@ -1,42 +1,42 @@
 @font-face {
-  font-family: 'Inter UI Regular';
+  font-family: 'Noto Serif KR Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url('NotoSerifKR-Light.otf') format('otf');
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Noto Serif KR Regular';
   font-style: normal;
   font-weight: 400;
-  src: url('Inter-UI-Regular.woff') format('woff');
+  src: url('NotoSerifKR-Regular.otf') format('otf');
   font-display: fallback;
 }
 @font-face {
-  font-family: 'Inter UI Regular Italic';
-  font-style: italic;
+  font-family: 'Noto Serif KR Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: url('NotoSerifKR-Medium.otf') format('otf');
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Noto Sans KR Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url('NotoSansKR-Light.otf') format('otf');
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Noto Sans KR Regular';
+  font-style: normal;
   font-weight: 400;
-  src: url('Inter-UI-Italic.woff') format('woff');
+  src: url('NotoSansKR-Regular.otf') format('otf');
   font-display: fallback;
 }
 @font-face {
-  font-family: 'Inter UI SemiBold';
+  font-family: 'Noto Sans KR Medium';
   font-style: normal;
-  font-weight: 600;
-  src: url('Inter-UI-SemiBold.woff') format('woff');
-  font-display: fallback;
-}
-@font-face {
-  font-family: 'Inter UI SemiBold Italic';
-  font-style: italic;
-  font-weight: 600;
-  src: url('Inter-UI-SemiBoldItalic.woff') format('woff');
-  font-display: fallback;
-}
-@font-face {
-  font-family: 'Inter UI Bold';
-  font-style: normal;
-  font-weight: 700;
-  src: url('Inter-UI-Bold.woff') format('woff');
-  font-display: fallback;
-}
-@font-face {
-  font-family: 'Inter UI Bold Italic';
-  font-style: italic;
-  font-weight: 700;
-  src: url('Inter-UI-BoldItalic.woff') format('woff');
+  font-weight: 500;
+  src: url('NotoSansKR-Medium.otf') format('otf');
   font-display: fallback;
 }
